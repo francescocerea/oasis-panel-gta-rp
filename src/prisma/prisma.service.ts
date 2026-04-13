@@ -6,10 +6,10 @@ import { PrismaMariaDb } from '@prisma/adapter-mariadb';
 export class PrismaService extends PrismaClient implements OnModuleInit {
   constructor() {
     const adapter = new PrismaMariaDb({
-      host: 'localhost',
+      host: '127.0.0.1',
       port: 3306,
-      user: 'root',
-      password: 'root',
+      user: 'oasis_user',
+      password: 'UnaPasswordSicura123!',
       database: 'oasis_panel',
     });
 
